@@ -1,4 +1,4 @@
-include .env
+include .env.local
 
 release:
-	GITHUB_TOKEN=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 yarn release
+	GITHUB_TOKEN=${GITHUB_TOKEN} yarn release
