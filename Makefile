@@ -1,4 +1,5 @@
 include .env
 
 release:
-	GITHUB_TOKEN=${GITHUB_TOKEN} yarn release
+	export GITHUB_TOKEN=${GITHUB_TOKEN} 
+	yarn release
